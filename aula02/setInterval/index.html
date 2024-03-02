@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browser API</title>
+</head>
+<body>
+  <button id="iniciar">Iniciar</button>
+  <button id="parar">Parar</button>
+  <script>
+    // executa apenas uma única vez
+    // setTimeout(() => {
+    //   alert("Bem-vindos!")
+    // }, 3000)
+
+    const buttonIniciar = document.getElementById("iniciar")
+    const buttonParar = document.getElementById("parar")
+
+    let interval;
+
+    buttonIniciar.addEventListener("click", function(){
+      // executa sempre a cada número de milisegundos
+      interval = setInterval(() => {
+        alert("Bem-vindos!")
+      }, 2000)
+    })
+
+    buttonParar.addEventListener("click", function(){
+      clearInterval(interval)
+    })
+  </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "nome": "bruno",
+
+  "curso": {
+    "nome": "fullstack",
+    "duracao": 900,
+    "escola": "Lab365"
+  },
+  "alunos": [
+    {
+      "aluno": {
+        "turma": "health",
+        "curso": "fullstack"
+      }
+    }
+  ]
+}
